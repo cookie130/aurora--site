@@ -1,0 +1,5 @@
+import { Catalog } from "@/components/catalog";
+import { Sun } from "@/components/brand";
+import { VisitBand } from "@/components/ui";
+export const metadata = { title: "Produtos", description: "Explore a vitrine demonstrativa da Aurora: pães artesanais, confeitaria, salgados e cafés. Produtos e preços ilustrativos.", alternates: { canonical: "/produtos/" } };
+export default function Products() { return <><section className="catalog-header container"><div><span className="eyebrow">NOSSA VITRINE</span><h1>Feitos aqui.<br/><em>Para o seu dia.</em></h1></div><div><Sun/><p>Do primeiro café à última fatia.<br/>Escolha o que combina com a sua pausa.</p></div></section><section className="catalog container" aria-label="Catálogo de produtos"><Catalog/><div className="catalog-info"><p>Uma vitrine para conhecer, sem pedidos online.</p><p>Produtos, porções e preços são demonstrativos. As fotografias são ilustrativas. Em uma operação real, consulte disponibilidade e ingredientes antes de pedir, especialmente em caso de alergias.</p></div></section><VisitBand/></>; }
